@@ -5,12 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "gimme"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = "Adds #random to ActiveRecord."
+    gem.description = "Makes it easy to pull random records from your ActiveRecord models at the database level."
     gem.email = "todd.persen@gmail.com"
     gem.homepage = "http://github.com/toddboom/gimme"
     gem.authors = ["Todd Persen"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
+    gem.add_development_dependency "activerecord", ">= 2.3.0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
